@@ -1,0 +1,71 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Light Mode */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  font-family: "Segoe UI", sans-serif;
+  transition: all 0.4s ease;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  transition: all 0.4s ease;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* Button */
+button {
+  padding: 12px 22px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: #111;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+.dark-mode .card {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.dark-mode .subtitle {
+  color: #ccc;
+}
+
+.dark-mode button {
+  background: white;
+  color: #111;
+}
